@@ -1,6 +1,6 @@
-const Anthropic = require("@anthropic-ai/sdk");
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
@@ -31,33 +31,20 @@ exports.handler = async (event) => {
       };
     }
 
-    const sourceType = mediaType === "application/pdf" ? "document" : "image";
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
-    const response = await client.messages.create({
-      model: "claude-sonnet-4-6",
-      max_tokens: 512,
-      messages: [
-        {
-          role: "user",
-          content: [
-            {
-              type: sourceType,
-              source: { type: "base64", media_type: mediaType, data: base64 },
-            },
-            {
-              type: "text",
-              text: `Extrae el nombre o descripción del producto principal de este documento (puede ser una factura, ficha técnica, etiqueta o cualquier documento comercial).
+    const result = await model.generateContent([
+      {
+        inlineData: { mimeType: mediaType, data: base64 },
+      },
+      `Extrae el nombre o descripción del producto principal de este documento (puede ser una factura, ficha técnica, etiqueta o cualquier documento comercial).
 
 Devuelve SOLO el nombre/descripción del producto en texto plano, sin explicaciones adicionales.
 Si hay varios productos, devuelve el más importante o el primero.
 Si no puedes identificar un producto, responde: "No se pudo identificar el producto"`,
-            },
-          ],
-        },
-      ],
-    });
+    ]);
 
-    const descripcion = response.content[0].text.trim();
+    const descripcion = result.response.text().trim();
 
     return {
       statusCode: 200,

@@ -1,9 +1,9 @@
-const Anthropic = require("@anthropic-ai/sdk");
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 const arancel = require("../../data/arancel.json");
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-const SYSTEM_PROMPT = `Eres un experto en clasificación arancelaria colombiana con profundo conocimiento del Sistema Armonizado (SA) y el Arancel de Aduanas de Colombia (Decreto 2153 de 2016 y sus modificaciones).
+const SYSTEM_PROMPT = `Eres un experto en clasificación arancelaria colombiana con profundo conocimiento del Sistema Armonizado (SA) y el Arancel de Aduanas de Colombia.
 
 Tu tarea es clasificar productos en su partida arancelaria correcta siguiendo el proceso de dos pasos:
 
@@ -23,7 +23,7 @@ Determina la naturaleza del producto:
 PASO 2 - CLASIFICACIÓN:
 Con base en el tipo identificado, selecciona la partida arancelaria más específica y correcta del arancel colombiano.
 
-RESPONDE SIEMPRE en el siguiente formato JSON exacto:
+RESPONDE SIEMPRE en el siguiente formato JSON exacto (sin markdown, sin bloques de código, solo JSON puro):
 {
   "tipo_producto": "descripción del tipo identificado",
   "razonamiento": "explicación paso a paso de cómo llegaste a la clasificación",
@@ -32,11 +32,9 @@ RESPONDE SIEMPRE en el siguiente formato JSON exacto:
   "seccion": "número de sección en romanos",
   "capitulo": "número de capítulo",
   "nivel_confianza": "alto|medio|bajo",
-  "advertencias": "cualquier nota o advertencia sobre la clasificación (vacío si no hay)",
+  "advertencias": "",
   "partidas_alternativas": []
-}
-
-Si el nivel de confianza es medio o bajo, incluye partidas alternativas con el mismo formato { "codigo": "XX.XX", "descripcion": "..." }.`;
+}`;
 
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
@@ -62,23 +60,23 @@ exports.handler = async (event) => {
       .map((p) => `${p.codigo} | ${p.descripcion} | Tipo: ${p.tipo}`)
       .join("\n");
 
-    const userMessage = `Clasifica el siguiente producto en el arancel colombiano:
+    const model = genAI.getGenerativeModel({
+      model: "gemini-1.5-flash",
+      systemInstruction: SYSTEM_PROMPT,
+    });
+
+    const prompt = `Clasifica el siguiente producto en el arancel colombiano:
 
 PRODUCTO: "${descripcion}"
 
 PARTIDAS DISPONIBLES EN EL ARANCEL:
 ${arancelResumen}
 
-Analiza el producto y devuelve la clasificación en el formato JSON especificado.`;
+Analiza el producto y devuelve la clasificación en el formato JSON especificado. Solo JSON puro, sin markdown.`;
 
-    const response = await client.messages.create({
-      model: "claude-sonnet-4-6",
-      max_tokens: 1024,
-      system: SYSTEM_PROMPT,
-      messages: [{ role: "user", content: userMessage }],
-    });
+    const result = await model.generateContent(prompt);
+    const rawText = result.response.text().trim();
 
-    const rawText = response.content[0].text.trim();
     const jsonMatch = rawText.match(/\{[\s\S]*\}/);
     if (!jsonMatch) throw new Error("Respuesta IA no contiene JSON válido");
 
