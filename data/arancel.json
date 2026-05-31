@@ -1,0 +1,222 @@
+{
+  "secciones": [
+    {
+      "id": "I",
+      "nombre": "Animales vivos y productos del reino animal",
+      "capitulos": ["01","02","03","04","05"]
+    },
+    {
+      "id": "II",
+      "nombre": "Productos del reino vegetal",
+      "capitulos": ["06","07","08","09","10","11","12","13","14"]
+    },
+    {
+      "id": "III",
+      "nombre": "Grasas y aceites animales o vegetales",
+      "capitulos": ["15"]
+    },
+    {
+      "id": "IV",
+      "nombre": "Productos de las industrias alimentarias; bebidas, líquidos alcohólicos y vinagre; tabaco",
+      "capitulos": ["16","17","18","19","20","21","22","23","24"]
+    },
+    {
+      "id": "V",
+      "nombre": "Productos minerales",
+      "capitulos": ["25","26","27"]
+    },
+    {
+      "id": "VI",
+      "nombre": "Productos de las industrias químicas o de las industrias conexas",
+      "capitulos": ["28","29","30","31","32","33","34","35","36","37","38"]
+    },
+    {
+      "id": "VII",
+      "nombre": "Plástico y sus manufacturas; caucho y sus manufacturas",
+      "capitulos": ["39","40"]
+    },
+    {
+      "id": "VIII",
+      "nombre": "Pieles, cueros, peletería y manufacturas",
+      "capitulos": ["41","42","43"]
+    },
+    {
+      "id": "IX",
+      "nombre": "Madera, carbón vegetal y manufacturas de madera; corcho",
+      "capitulos": ["44","45","46"]
+    },
+    {
+      "id": "X",
+      "nombre": "Pasta de madera, papel, cartón y sus manufacturas",
+      "capitulos": ["47","48","49"]
+    },
+    {
+      "id": "XI",
+      "nombre": "Materias textiles y sus manufacturas",
+      "capitulos": ["50","51","52","53","54","55","56","57","58","59","60","61","62","63"]
+    },
+    {
+      "id": "XII",
+      "nombre": "Calzado, sombrerería, paraguas, bastones, látigos, fustas y sus partes",
+      "capitulos": ["64","65","66","67"]
+    },
+    {
+      "id": "XIII",
+      "nombre": "Manufacturas de piedra, yeso fraguable, cemento, amianto, mica o materias análogas",
+      "capitulos": ["68","69","70"]
+    },
+    {
+      "id": "XIV",
+      "nombre": "Perlas finas o cultivadas, piedras preciosas, metales preciosos",
+      "capitulos": ["71"]
+    },
+    {
+      "id": "XV",
+      "nombre": "Metales comunes y manufacturas de estos metales",
+      "capitulos": ["72","73","74","75","76","77","78","79","80","81","82","83"]
+    },
+    {
+      "id": "XVI",
+      "nombre": "Máquinas y aparatos, material eléctrico y sus partes",
+      "capitulos": ["84","85"]
+    },
+    {
+      "id": "XVII",
+      "nombre": "Material de transporte",
+      "capitulos": ["86","87","88","89"]
+    },
+    {
+      "id": "XVIII",
+      "nombre": "Instrumentos y aparatos de óptica, fotografía, cinematografía, medida, control o precisión",
+      "capitulos": ["90","91","92"]
+    },
+    {
+      "id": "XIX",
+      "nombre": "Armas, municiones y sus partes y accesorios",
+      "capitulos": ["93"]
+    },
+    {
+      "id": "XX",
+      "nombre": "Mercancías y productos diversos",
+      "capitulos": ["94","95","96"]
+    },
+    {
+      "id": "XXI",
+      "nombre": "Objetos de arte o colección y antigüedades",
+      "capitulos": ["97"]
+    }
+  ],
+  "partidas": [
+    { "codigo": "01.01", "descripcion": "Caballos, asnos, mulos y burdéganos, vivos", "capitulo": "01", "tipo": "animal vivo" },
+    { "codigo": "01.02", "descripcion": "Animales vivos de la especie bovina", "capitulo": "01", "tipo": "animal vivo" },
+    { "codigo": "01.03", "descripcion": "Animales vivos de la especie porcina", "capitulo": "01", "tipo": "animal vivo" },
+    { "codigo": "01.04", "descripcion": "Animales vivos de las especies ovina o caprina", "capitulo": "01", "tipo": "animal vivo" },
+    { "codigo": "01.05", "descripcion": "Gallos, gallinas, patos, gansos, pavos y pintadas, de las especies domésticas, vivos", "capitulo": "01", "tipo": "animal vivo" },
+    { "codigo": "01.06", "descripcion": "Los demás animales vivos (insectos, reptiles, primates, etc.)", "capitulo": "01", "tipo": "animal vivo" },
+    { "codigo": "02.01", "descripcion": "Carne de animales de la especie bovina, fresca o refrigerada", "capitulo": "02", "tipo": "producto animal" },
+    { "codigo": "02.02", "descripcion": "Carne de animales de la especie bovina, congelada", "capitulo": "02", "tipo": "producto animal" },
+    { "codigo": "02.03", "descripcion": "Carne de animales de la especie porcina, fresca, refrigerada o congelada", "capitulo": "02", "tipo": "producto animal" },
+    { "codigo": "02.04", "descripcion": "Carne de animales de las especies ovina o caprina, fresca, refrigerada o congelada", "capitulo": "02", "tipo": "producto animal" },
+    { "codigo": "02.07", "descripcion": "Carne y despojos comestibles de aves de la partida 01.05, frescos, refrigerados o congelados", "capitulo": "02", "tipo": "producto animal" },
+    { "codigo": "03.01", "descripcion": "Peces vivos", "capitulo": "03", "tipo": "animal vivo" },
+    { "codigo": "03.02", "descripcion": "Pescado fresco o refrigerado, excepto los filetes y demás carne de pescado", "capitulo": "03", "tipo": "producto animal" },
+    { "codigo": "03.03", "descripcion": "Pescado congelado, excepto los filetes y demás carne de pescado", "capitulo": "03", "tipo": "producto animal" },
+    { "codigo": "03.06", "descripcion": "Crustáceos, incluso pelados, vivos, frescos, refrigerados, congelados, secos, salados", "capitulo": "03", "tipo": "producto animal" },
+    { "codigo": "03.07", "descripcion": "Moluscos, incluso separados de sus valvas, vivos, frescos, refrigerados, congelados", "capitulo": "03", "tipo": "producto animal" },
+    { "codigo": "04.01", "descripcion": "Leche y nata (crema), sin concentrar, sin adición de azúcar ni otro edulcorante", "capitulo": "04", "tipo": "producto animal" },
+    { "codigo": "04.02", "descripcion": "Leche y nata (crema), concentradas o con adición de azúcar u otro edulcorante", "capitulo": "04", "tipo": "producto animal procesado" },
+    { "codigo": "04.03", "descripcion": "Suero de mantequilla (de manteca), leche y nata (crema) cuajadas, yogur, kéfir", "capitulo": "04", "tipo": "producto animal procesado" },
+    { "codigo": "04.06", "descripcion": "Quesos y requesón", "capitulo": "04", "tipo": "producto animal procesado" },
+    { "codigo": "04.07", "descripcion": "Huevos de ave con cáscara, frescos, conservados o cocidos", "capitulo": "04", "tipo": "producto animal" },
+    { "codigo": "07.01", "descripcion": "Patatas (papas) frescas o refrigeradas", "capitulo": "07", "tipo": "vegetal fresco" },
+    { "codigo": "07.02", "descripcion": "Tomates frescos o refrigerados", "capitulo": "07", "tipo": "vegetal fresco" },
+    { "codigo": "07.03", "descripcion": "Cebollas, chalotes, ajos, puerros y demás hortalizas aliáceas, frescos o refrigerados", "capitulo": "07", "tipo": "vegetal fresco" },
+    { "codigo": "07.04", "descripcion": "Coles, coliflores, coles rizadas y productos comestibles similares, frescos o refrigerados", "capitulo": "07", "tipo": "vegetal fresco" },
+    { "codigo": "07.09", "descripcion": "Las demás hortalizas, frescas o refrigeradas", "capitulo": "07", "tipo": "vegetal fresco" },
+    { "codigo": "08.01", "descripcion": "Cocos, nueces de Brasil y nueces de marañón (merey, anacardo, cajuil), frescos o secos", "capitulo": "08", "tipo": "fruta fresca" },
+    { "codigo": "08.03", "descripcion": "Bananas (plátanos), incluidos los plátanos machos, frescos o secos", "capitulo": "08", "tipo": "fruta fresca" },
+    { "codigo": "08.04", "descripcion": "Dátiles, higos, piñas (ananás), aguacates (paltas), guayabas, mangos y mangostanes, frescos o secos", "capitulo": "08", "tipo": "fruta fresca" },
+    { "codigo": "08.05", "descripcion": "Agrios (cítricos) frescos o secos", "capitulo": "08", "tipo": "fruta fresca" },
+    { "codigo": "08.08", "descripcion": "Manzanas, peras y membrillos, frescos", "capitulo": "08", "tipo": "fruta fresca" },
+    { "codigo": "09.01", "descripcion": "Café, incluso tostado o descafeinado; cáscara y cascarilla de café", "capitulo": "09", "tipo": "producto vegetal procesado" },
+    { "codigo": "09.02", "descripcion": "Té, incluso aromatizado", "capitulo": "09", "tipo": "producto vegetal procesado" },
+    { "codigo": "09.04", "descripcion": "Pimienta del género Piper; pimientos del género Capsicum o Pimenta, secos o triturados o pulverizados", "capitulo": "09", "tipo": "especia" },
+    { "codigo": "10.01", "descripcion": "Trigo y morcajo (tranquillón)", "capitulo": "10", "tipo": "cereal" },
+    { "codigo": "10.02", "descripcion": "Centeno", "capitulo": "10", "tipo": "cereal" },
+    { "codigo": "10.05", "descripcion": "Maíz", "capitulo": "10", "tipo": "cereal" },
+    { "codigo": "10.06", "descripcion": "Arroz", "capitulo": "10", "tipo": "cereal" },
+    { "codigo": "12.01", "descripcion": "Habas (porotos, frijoles, fréjoles) de soja (soya), incluso quebrantadas", "capitulo": "12", "tipo": "semilla oleaginosa" },
+    { "codigo": "15.07", "descripcion": "Aceite de soja (soya) y sus fracciones", "capitulo": "15", "tipo": "aceite vegetal" },
+    { "codigo": "15.11", "descripcion": "Aceite de palma y sus fracciones", "capitulo": "15", "tipo": "aceite vegetal" },
+    { "codigo": "15.17", "descripcion": "Margarina; mezclas o preparaciones alimenticias de grasas o aceites animales o vegetales", "capitulo": "15", "tipo": "producto procesado" },
+    { "codigo": "16.01", "descripcion": "Embutidos y productos similares de carne, despojos o sangre; preparaciones alimenticias a base de estos productos", "capitulo": "16", "tipo": "alimento procesado" },
+    { "codigo": "16.02", "descripcion": "Las demás preparaciones y conservas de carne, despojos o sangre", "capitulo": "16", "tipo": "alimento procesado" },
+    { "codigo": "16.04", "descripcion": "Preparaciones y conservas de pescado; caviar y sus sucedáneos preparados con huevas de pescado", "capitulo": "16", "tipo": "alimento procesado" },
+    { "codigo": "17.01", "descripcion": "Azúcar de caña o de remolacha y sacarosa químicamente pura, en estado sólido", "capitulo": "17", "tipo": "alimento procesado" },
+    { "codigo": "17.04", "descripcion": "Artículos de confitería sin cacao (incluido el chocolate blanco)", "capitulo": "17", "tipo": "alimento procesado" },
+    { "codigo": "18.01", "descripcion": "Cacao en grano, entero o partido, crudo o tostado", "capitulo": "18", "tipo": "materia prima vegetal" },
+    { "codigo": "18.02", "descripcion": "Cáscara, películas y demás desechos de cacao", "capitulo": "18", "tipo": "residuo vegetal" },
+    { "codigo": "18.03", "descripcion": "Pasta de cacao, incluso desgrasada", "capitulo": "18", "tipo": "producto procesado" },
+    { "codigo": "18.04", "descripcion": "Manteca, grasa y aceite de cacao", "capitulo": "18", "tipo": "producto procesado" },
+    { "codigo": "18.05", "descripcion": "Cacao en polvo sin adición de azúcar ni otro edulcorante", "capitulo": "18", "tipo": "producto procesado" },
+    { "codigo": "18.06", "descripcion": "Chocolate y demás preparaciones alimenticias que contengan cacao", "capitulo": "18", "tipo": "alimento procesado" },
+    { "codigo": "19.01", "descripcion": "Extractos de malta; preparaciones alimenticias de harina, grañones, sémola, almidón, fécula o extractos de malta", "capitulo": "19", "tipo": "alimento procesado" },
+    { "codigo": "19.02", "descripcion": "Pastas alimenticias (fideos, macarrones, espaguetis, lasañas, etc.)", "capitulo": "19", "tipo": "alimento procesado" },
+    { "codigo": "19.05", "descripcion": "Productos de panadería, pastelería o galletería, incluso con adición de cacao", "capitulo": "19", "tipo": "alimento procesado" },
+    { "codigo": "20.01", "descripcion": "Hortalizas, frutas u otros frutos y demás partes comestibles de plantas, preparados o conservados en vinagre o ácido acético", "capitulo": "20", "tipo": "alimento procesado" },
+    { "codigo": "20.09", "descripcion": "Jugos de frutas u otros frutos o de hortalizas, sin fermentar y sin adición de alcohol", "capitulo": "20", "tipo": "alimento procesado" },
+    { "codigo": "21.01", "descripcion": "Extractos, esencias y concentrados de café, té o yerba mate; preparaciones a base de estos productos", "capitulo": "21", "tipo": "alimento procesado" },
+    { "codigo": "21.06", "descripcion": "Preparaciones alimenticias no expresadas ni comprendidas en otra parte", "capitulo": "21", "tipo": "alimento procesado" },
+    { "codigo": "22.01", "descripcion": "Agua, incluidas el agua mineral natural o artificial y la agua gaseada, sin adición de azúcar", "capitulo": "22", "tipo": "bebida" },
+    { "codigo": "22.02", "descripcion": "Agua, incluidas el agua mineral y la agua gaseada, con adición de azúcar u otro edulcorante o aromatizada, y demás bebidas no alcohólicas", "capitulo": "22", "tipo": "bebida" },
+    { "codigo": "22.03", "descripcion": "Cerveza de malta", "capitulo": "22", "tipo": "bebida alcohólica" },
+    { "codigo": "22.04", "descripcion": "Vino de uvas frescas, incluso encabezado; mosto de uva", "capitulo": "22", "tipo": "bebida alcohólica" },
+    { "codigo": "22.08", "descripcion": "Alcohol etílico sin desnaturalizar; aguardiente, licores y demás bebidas espirituosas", "capitulo": "22", "tipo": "bebida alcohólica" },
+    { "codigo": "24.01", "descripcion": "Tabaco en rama o sin elaborar; desperdicios de tabaco", "capitulo": "24", "tipo": "materia prima" },
+    { "codigo": "24.02", "descripcion": "Cigarros (puros), cigarritos y cigarrillos de tabaco o de sucedáneos del tabaco", "capitulo": "24", "tipo": "producto procesado" },
+    { "codigo": "27.09", "descripcion": "Aceites crudos de petróleo o de mineral bituminoso", "capitulo": "27", "tipo": "mineral" },
+    { "codigo": "27.10", "descripcion": "Aceites de petróleo o de mineral bituminoso, excepto los aceites crudos", "capitulo": "27", "tipo": "mineral procesado" },
+    { "codigo": "29.01", "descripcion": "Hidrocarburos acíclicos", "capitulo": "29", "tipo": "producto químico" },
+    { "codigo": "30.01", "descripcion": "Glándulas y demás órganos para usos opoterápicos; heparina y sus sales", "capitulo": "30", "tipo": "producto farmacéutico" },
+    { "codigo": "30.03", "descripcion": "Medicamentos (excepto los productos de las partidas 30.02, 30.05 o 30.06) constituidos por productos mezclados entre sí", "capitulo": "30", "tipo": "producto farmacéutico" },
+    { "codigo": "30.04", "descripcion": "Medicamentos (excepto los productos de las partidas 30.02, 30.05 o 30.06) constituidos por productos mezclados o sin mezclar", "capitulo": "30", "tipo": "producto farmacéutico" },
+    { "codigo": "33.01", "descripcion": "Aceites esenciales (desterpenados o no), incluidos los llamados «concretos» o «absolutos»", "capitulo": "33", "tipo": "producto químico" },
+    { "codigo": "33.03", "descripcion": "Perfumes y aguas de tocador", "capitulo": "33", "tipo": "cosmético" },
+    { "codigo": "33.04", "descripcion": "Preparaciones de belleza, maquillaje y para el cuidado de la piel", "capitulo": "33", "tipo": "cosmético" },
+    { "codigo": "33.05", "descripcion": "Preparaciones capilares (champú, lacas, tintes, etc.)", "capitulo": "33", "tipo": "cosmético" },
+    { "codigo": "33.06", "descripcion": "Preparaciones para higiene bucal o dental, incluidos los polvos y cremas para dentaduras postizas", "capitulo": "33", "tipo": "cosmético" },
+    { "codigo": "33.07", "descripcion": "Preparaciones para afeitar o para antes o después del afeitado, desodorantes corporales", "capitulo": "33", "tipo": "cosmético" },
+    { "codigo": "39.01", "descripcion": "Polímeros de etileno en formas primarias", "capitulo": "39", "tipo": "plástico" },
+    { "codigo": "39.23", "descripcion": "Artículos para el transporte o envasado, de plástico; tapones, tapas, cápsulas y demás dispositivos de cierre, de plástico", "capitulo": "39", "tipo": "manufactura de plástico" },
+    { "codigo": "42.02", "descripcion": "Baúles, maletas (valijas), maletines, incluso los de aseo y los portadocumentos, carteras", "capitulo": "42", "tipo": "manufactura de cuero" },
+    { "codigo": "44.07", "descripcion": "Madera aserrada o desbastada longitudinalmente, cortada o desenrollada, incluso cepillada, lijada o unida por los extremos", "capitulo": "44", "tipo": "madera" },
+    { "codigo": "48.02", "descripcion": "Papel y cartón, sin estucar ni recubrir, de los tipos utilizados para escribir, imprimir u otros fines gráficos", "capitulo": "48", "tipo": "papel" },
+    { "codigo": "52.01", "descripcion": "Algodón sin cardar ni peinar", "capitulo": "52", "tipo": "fibra textil" },
+    { "codigo": "52.08", "descripcion": "Tejidos de algodón con un contenido de algodón superior o igual al 85% en peso", "capitulo": "52", "tipo": "textil" },
+    { "codigo": "61.01", "descripcion": "Abrigos, chaquetones, capas, anoraks, cazadoras y artículos similares, de punto, para hombres o niños", "capitulo": "61", "tipo": "prenda de vestir" },
+    { "codigo": "61.09", "descripcion": "Camisetas de punto (T-shirts)", "capitulo": "61", "tipo": "prenda de vestir" },
+    { "codigo": "62.01", "descripcion": "Abrigos, chaquetones, capas, anoraks, cazadoras y artículos similares, para hombres o niños (excepto punto)", "capitulo": "62", "tipo": "prenda de vestir" },
+    { "codigo": "62.04", "descripcion": "Trajes sastres, conjuntos, chaquetas (sacos), vestidos, faldas, pantalones para mujeres o niñas", "capitulo": "62", "tipo": "prenda de vestir" },
+    { "codigo": "64.01", "descripcion": "Calzado impermeable con suela y parte superior de caucho o plástico", "capitulo": "64", "tipo": "calzado" },
+    { "codigo": "64.03", "descripcion": "Calzado con suela de caucho, plástico, cuero natural o regenerado y parte superior de cuero natural", "capitulo": "64", "tipo": "calzado" },
+    { "codigo": "72.08", "descripcion": "Productos laminados planos de hierro o acero sin alear, de anchura superior o igual a 600 mm, laminados en caliente", "capitulo": "72", "tipo": "metal" },
+    { "codigo": "73.08", "descripcion": "Construcciones y sus partes de fundición, hierro o acero (puentes, compuertas de esclusas, torres, etc.)", "capitulo": "73", "tipo": "manufactura metálica" },
+    { "codigo": "84.01", "descripcion": "Reactores nucleares; elementos combustibles (cartuchos) sin irradiar para reactores nucleares; máquinas y aparatos para la separación isotópica", "capitulo": "84", "tipo": "maquinaria" },
+    { "codigo": "84.15", "descripcion": "Máquinas y aparatos para el acondicionamiento de aire (aires acondicionados)", "capitulo": "84", "tipo": "maquinaria" },
+    { "codigo": "84.18", "descripcion": "Refrigeradores, congeladores y demás material, máquinas y aparatos para producción de frío", "capitulo": "84", "tipo": "maquinaria" },
+    { "codigo": "84.71", "descripcion": "Máquinas automáticas para tratamiento o procesamiento de datos y sus unidades (computadoras, laptops)", "capitulo": "84", "tipo": "maquinaria electrónica" },
+    { "codigo": "84.73", "descripcion": "Partes y accesorios de las máquinas de la partida 84.71", "capitulo": "84", "tipo": "maquinaria electrónica" },
+    { "codigo": "85.17", "descripcion": "Teléfonos, incluidos los teléfonos móviles (celulares) y los de otras redes inalámbricas", "capitulo": "85", "tipo": "aparato electrónico" },
+    { "codigo": "85.25", "descripcion": "Aparatos de emisión para radiodifusión o televisión; cámaras de televisión, cámaras digitales", "capitulo": "85", "tipo": "aparato electrónico" },
+    { "codigo": "85.28", "descripcion": "Monitores y proyectores que no incorporen aparato receptor de televisión; televisores", "capitulo": "85", "tipo": "aparato electrónico" },
+    { "codigo": "87.03", "descripcion": "Automóviles de turismo y demás vehículos automóviles concebidos principalmente para el transporte de personas", "capitulo": "87", "tipo": "vehículo" },
+    { "codigo": "87.04", "descripcion": "Vehículos automóviles para el transporte de mercancías (camiones, camionetas)", "capitulo": "87", "tipo": "vehículo" },
+    { "codigo": "87.11", "descripcion": "Motocicletas, velocípedos con motor auxiliar, con sidecar o sin él", "capitulo": "87", "tipo": "vehículo" },
+    { "codigo": "90.13", "descripcion": "Dispositivos de cristal líquido; láseres; demás aparatos e instrumentos de óptica", "capitulo": "90", "tipo": "instrumento óptico" },
+    { "codigo": "90.18", "descripcion": "Instrumentos y aparatos de medicina, cirugía, odontología o veterinaria", "capitulo": "90", "tipo": "instrumento médico" },
+    { "codigo": "94.01", "descripcion": "Asientos (excepto los de la partida 94.02), incluso los transformables en cama, y sus partes", "capitulo": "94", "tipo": "mueble" },
+    { "codigo": "94.03", "descripcion": "Los demás muebles y sus partes", "capitulo": "94", "tipo": "mueble" },
+    { "codigo": "95.03", "descripcion": "Triciclos, patinetes, coches de pedal y juguetes similares con ruedas; cochecitos para muñecas; muñecas; los demás juguetes", "capitulo": "95", "tipo": "juguete" },
+    { "codigo": "96.01", "descripcion": "Marfil, hueso, concha de tortuga, asta, cuerno, coral, nácar y demás materias animales para tallar, trabajados", "capitulo": "96", "tipo": "manufactura" }
+  ]
+}

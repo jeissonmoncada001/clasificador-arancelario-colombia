@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clasificador Arancelario Colombia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo">🇨🇴</div>
+      <h1>Clasificador Arancelario</h1>
+      <p class="subtitle">Encuentra la partida arancelaria de cualquier producto con inteligencia artificial</p>
+    </header>
+
+    <main>
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab active" data-tab="texto">Describir producto</button>
+        <button class="tab" data-tab="archivo">Subir documento</button>
+      </div>
+
+      <!-- Tab: Texto -->
+      <div id="tab-texto" class="tab-content active">
+        <div class="input-group">
+          <label for="descripcion">¿Qué producto quieres clasificar?</label>
+          <textarea
+            id="descripcion"
+            placeholder="Ej: chocolate con leche, motocicleta 150cc, camisa de algodón, medicamento para diabetes..."
+            rows="3"
+          ></textarea>
+        </div>
+        <button class="btn-primary" id="btn-clasificar">
+          <span class="btn-text">Clasificar producto</span>
+          <span class="btn-spinner hidden">Analizando...</span>
+        </button>
+      </div>
+
+      <!-- Tab: Archivo -->
+      <div id="tab-archivo" class="tab-content">
+        <div class="upload-zone" id="upload-zone">
+          <div class="upload-icon">📄</div>
+          <p>Arrastra tu archivo aquí o <span class="upload-link">haz clic para seleccionar</span></p>
+          <p class="upload-hint">Soporta: JPG, PNG, WEBP, PDF</p>
+          <input type="file" id="file-input" accept="image/jpeg,image/png,image/webp,application/pdf" hidden />
+        </div>
+        <div id="file-preview" class="hidden">
+          <div class="file-info">
+            <span class="file-icon">📎</span>
+            <span id="file-name"></span>
+            <button class="btn-remove" id="btn-remove-file">✕</button>
+          </div>
+        </div>
+        <button class="btn-primary hidden" id="btn-extraer">
+          <span class="btn-text">Extraer y clasificar</span>
+          <span class="btn-spinner hidden">Procesando archivo...</span>
+        </button>
+      </div>
+
+      <!-- Resultado -->
+      <div id="resultado" class="resultado hidden">
+        <div class="resultado-header">
+          <span class="resultado-badge" id="badge-confianza"></span>
+          <h2>Partida Arancelaria</h2>
+        </div>
+
+        <div class="partida-principal">
+          <div class="partida-codigo" id="res-codigo"></div>
+          <div class="partida-descripcion" id="res-descripcion"></div>
+        </div>
+
+        <div class="resultado-detalles">
+          <div class="detalle-item">
+            <span class="detalle-label">Tipo de producto</span>
+            <span class="detalle-valor" id="res-tipo"></span>
+          </div>
+          <div class="detalle-item">
+            <span class="detalle-label">Sección</span>
+            <span class="detalle-valor" id="res-seccion"></span>
+          </div>
+          <div class="detalle-item">
+            <span class="detalle-label">Capítulo</span>
+            <span class="detalle-valor" id="res-capitulo"></span>
+          </div>
+        </div>
+
+        <div class="razonamiento">
+          <h3>Análisis</h3>
+          <p id="res-razonamiento"></p>
+        </div>
+
+        <div id="advertencias-box" class="advertencias hidden">
+          <span class="adv-icon">⚠️</span>
+          <p id="res-advertencias"></p>
+        </div>
+
+        <div id="alternativas-box" class="alternativas hidden">
+          <h3>Partidas alternativas posibles</h3>
+          <div id="res-alternativas"></div>
+        </div>
+
+        <button class="btn-secondary" id="btn-nueva">Nueva consulta</button>
+      </div>
+
+      <!-- Error -->
+      <div id="error-box" class="error-box hidden">
+        <span>⚠️</span>
+        <p id="error-msg"></p>
+      </div>
+
+      <!-- Historial -->
+      <div id="historial-section" class="historial hidden">
+        <h3>Consultas recientes</h3>
+        <div id="historial-lista"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Basado en el Arancel de Aduanas de Colombia · Solo orientativo, consulta siempre con un agente de aduanas</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

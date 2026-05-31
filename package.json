@@ -1,0 +1,15 @@
+{
+  "name": "clasificador-arancelario-colombia",
+  "version": "1.0.0",
+  "description": "Clasificador de partidas arancelarias colombianas con IA",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}
